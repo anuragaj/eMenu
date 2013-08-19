@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dishes>   
+	<vegstarters>
+	    <id>1</id>
+		<name>Gobi manchuria</name>
+       	<rate>110</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>gobi</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>2</id>
+		<name>Chilly Veg</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_chillyveg</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>3</id>
+		<name>BabyCorn Manchuria</name>
+       	<rate>110</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_babycornmanchurian</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>4</id>
+		<name>Paneer Chilly</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_paneerchilly</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>5</id>
+		<name>Paneer 65</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_paneer65</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>6</id>
+		<name>Mushroom Chilly</name>
+       	<rate>130</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_mushroomchilly</icon>
+	</vegstarters>
+	<vegstarters>
+	    <id>7</id>
+		<name>Mushroom Manchurian</name>
+       	<rate>130</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_mushroommanchurian</icon>
+	</vegstarters>
+	
+	
+	<nonvegstarters>
+	    <id>1</id>
+		<name>Chicken Pepper Salt</name>
+       	<rate>160</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_chickenpeppersalt</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>2</id>
+		<name>Chicken Manchurian</name>
+       	<rate>160</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_chickenmanchurian</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>3</id>
+		<name>Chilly Chicken</name>
+       	<rate>160</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_chillychicken</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>4</id>
+		<name>Mutton Roast</name>
+       	<rate>180</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_muttonroast</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>5</id>
+		<name>Mutton Roast</name>
+       	<rate>180</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_muttonroast</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>6</id>
+		<name>Mutton Keema ball</name>
+       	<rate>180</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_muttonkheemaball</icon>
+	</nonvegstarters>
+	<nonvegstarters>
+	    <id>7</id>
+		<name>Mutton Fry</name>
+       	<rate>180</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>Chinese Non vegetarian snack dish served with sauce</description>
+		<shortdescription>Chinese dish</shortdescription>
+		<icon>i_muttonfry</icon>
+	</nonvegstarters>
+	<vegcurry>
+	    <id>1</id>
+		<name>Dal fry</name>
+       	<rate>80</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_dalfry</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>2</id>
+		<name>Alu Gobi masala</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_alugobimasala</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>3</id>
+		<name>Mixed Veg Curry</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_mixedvegcurry</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>4</id>
+		<name>Vegetable Kadai</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_vegkadai</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>5</id>
+		<name>Capsicum Masala</name>
+       	<rate>120</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_capsicummasala</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>6</id>
+		<name>Mushroom Masala</name>
+       	<rate>130</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_mushroommasala</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>7</id>
+		<name>Paneer Butter Masala</name>
+       	<rate>130</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_paneerbuttermasala</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>8</id>
+		<name>Malai Kofta</name>
+       	<rate>130</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_malaikofta</icon>
+	</vegcurry>
+	<vegcurry>
+	    <id>9</id>
+		<name>Palak Paneer</name>
+       	<rate>160</rate>
+       	<rating>5</rating>
+		<spicy>3</spicy>
+		<description>This is a traditional North Indian curry</description>
+		<shortdescription>Indian dish</shortdescription>
+		<icon>i_palakpaneer</icon>
+	</vegcurry>22
+</Dishes>

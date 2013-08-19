@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cusines>
+    <cusine>
+        <id>1</id>
+        <name>Veg Starters</name>
+        <tag>vegstarters</tag>
+    </cusine>
+     <cusine>
+        <id>2</id>
+        <name>Non Veg Starters</name>
+        <tag>nonvegstarters</tag>
+    </cusine>
+     <cusine>
+        <id>3</id>
+        <name>Veg Curry</name>
+        <tag>vegcurry</tag>
+    </cusine>
+</cusines>
