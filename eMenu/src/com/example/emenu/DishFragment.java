@@ -54,24 +54,26 @@ public class DishFragment extends Fragment {
 	Button addOrder;
 	View view;
 	View v;
+	int currentShowingDishITemPosition = -1;
 
-	public class orderedItems{
+	public class orderedItems {
 		private String dishName;
 		private int quantity;
 		private int spicyIndex;
-		
-		public void setDishName(String dishName){
-			this.dishName=dishName;
+
+		public void setDishName(String dishName) {
+			this.dishName = dishName;
 		}
-		public void setQuantity(int quantity){
-			this.quantity=quantity;
+
+		public void setQuantity(int quantity) {
+			this.quantity = quantity;
 		}
-		public void setSpicyIndex(int index){
-			this.spicyIndex=index;
+
+		public void setSpicyIndex(int index) {
+			this.spicyIndex = index;
 		}
 	}
-	
-	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -100,8 +102,6 @@ public class DishFragment extends Fragment {
 								"ImageZoomDialogFragment");
 			}
 		});
-		
-		
 
 		spicyBar = (SeekBar) v.findViewById(R.id.spicybar);
 
@@ -134,7 +134,8 @@ public class DishFragment extends Fragment {
 	}
 
 	public void updateDishView(int position, HashMap<String, String> dishDetails) {
-
+		currentShowingDishITemPosition = position;
+		
 		if (dishDetails != null) {
 			dishName.setText(dishDetails.get(KEY_NAME));
 			dishDescription.setText(dishDetails.get(KEY_DESCRIPTION));
