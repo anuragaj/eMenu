@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+
 import android.app.Activity;
-//import android.app.ListFragment;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.View;
@@ -15,8 +14,7 @@ import android.widget.ListView;
 
 public class DishTypeFragment extends ListFragment {
 	OnDishTypeSelectedListener mCallback;
-	ListView listview;
-	// String[] dishType = { "Starters", "Main Course", "Deserts" };
+
 	List<HashMap<String, String>> cusineDataCollection;
 	List<String> mDishType = new ArrayList<String>();
 	ArrayAdapter<String> mDishTypeAdapter;
@@ -36,9 +34,7 @@ public class DishTypeFragment extends ListFragment {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		int layout = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB ? android.R.layout.simple_list_item_activated_1
-				: android.R.layout.simple_list_item_1;
-		mDishTypeAdapter = new ArrayAdapter<String>(getActivity(), layout,
+		mDishTypeAdapter = new ArrayAdapter<String>(getActivity(), R.layout.cusine_item,
 				mDishType);
 		//loadDishType();
 		setListAdapter(mDishTypeAdapter);

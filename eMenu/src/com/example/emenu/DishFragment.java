@@ -17,17 +17,19 @@ package com.example.emenu;
 
 import java.util.HashMap;
 
-//import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
 import android.widget.TextView;
+
+//import android.app.Fragment;
 
 public class DishFragment extends Fragment {
 	static final String KEY_TAG = "dish"; // parent node
@@ -53,20 +55,54 @@ public class DishFragment extends Fragment {
 	View view;
 	View v;
 
+	public class orderedItems{
+		private String dishName;
+		private int quantity;
+		private int spicyIndex;
+		
+		public void setDishName(String dishName){
+			this.dishName=dishName;
+		}
+		public void setQuantity(int quantity){
+			this.quantity=quantity;
+		}
+		public void setSpicyIndex(int index){
+			this.spicyIndex=index;
+		}
+	}
+	
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
 		if (savedInstanceState != null) {
 			mCurrentPosition = savedInstanceState.getInt(ARG_POSITION);
-			dishId = savedInstanceState.getString(ARG_ID);			
+			dishId = savedInstanceState.getString(ARG_ID);
 		}
-		v = inflater.inflate(R.layout.dishdetails_layout, container,
-				false);
-
+		v = inflater.inflate(R.layout.dishdetails_layout, container, false);
+		v.setBackgroundResource(R.drawable.gradient_bg);
 		dishName = (TextView) v.findViewById(R.id.dishName);
 		dishDescription = (TextView) v.findViewById(R.id.dishDescription);
 		dishImage = (ImageButton) v.findViewById(R.id.dishImage);
+
+		dishImage.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				Bundle bundle = new Bundle();
+
+				bundle.putString(KEY_ICON, dishDetails.get(KEY_ICON));
+				ImageZoomDialogFragment mImageZoomDialogFragment = new ImageZoomDialogFragment();
+				mImageZoomDialogFragment.setArguments(bundle);
+				mImageZoomDialogFragment
+						.show(getActivity().getSupportFragmentManager(),
+								"ImageZoomDialogFragment");
+			}
+		});
+		
+		
+
 		spicyBar = (SeekBar) v.findViewById(R.id.spicybar);
 
 		spicylabel = (TextView) v.findViewById(R.id.spicyLabel);
@@ -77,11 +113,9 @@ public class DishFragment extends Fragment {
 		np.setMinValue(0);
 		np.setWrapSelectorWheel(false);
 		np.setFocusable(true);
-		np.setFocusableInTouchMode(true);		
-		
-		
-		return v;
+		np.setFocusableInTouchMode(true);
 
+		return v;
 	}
 
 	@Override
@@ -100,7 +134,7 @@ public class DishFragment extends Fragment {
 	}
 
 	public void updateDishView(int position, HashMap<String, String> dishDetails) {
-		
+
 		if (dishDetails != null) {
 			dishName.setText(dishDetails.get(KEY_NAME));
 			dishDescription.setText(dishDetails.get(KEY_DESCRIPTION));
